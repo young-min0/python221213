@@ -1,5 +1,6 @@
 # 정적메서드.py
 class MyCalc(object):
+    # 데코레이터(코드를 설명, 생성)
     @staticmethod
     def my_add(x,y):
         return x+y
