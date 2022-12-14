@@ -29,3 +29,6 @@ s = Student("이순신", "010-111-1234", "컴공", "991122")
 p.printInfo()
 s.printInfo()
 
+print("---issubclass()---")
+print(issubclass(Student, Person))
+print(issubclass(Person, Student))
