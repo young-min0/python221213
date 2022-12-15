@@ -16,4 +16,8 @@ soup = BeautifulSoup(page, "html.parser")
 
 # 검색의 조건: <p class='outer-text'>"
 # 파이썬의 키워드 class 제공(이름 충돌): class_ 
-print(soup.find_all("p", class_='outer-text'))
+# print(soup.find_all("p", class_='outer-text'))
+
+# 컨텐츠만 가져오기
+for item in soup.find_all("p"):
+    print(item.text.strip().replace("\n",""))
